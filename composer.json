@@ -1,0 +1,32 @@
+{
+    "type": "phpcodesniffer-standard",
+    "name": "phpmath/coding-standard",
+    "description": "The coding standards for PHP_CodeSniffer we use at phpmath",
+    "homepage": "https://github.com/phpmath",
+    "license": "MIT",
+    "keywords": [
+        "phpmath",
+        "coding-standard",
+        "coding-standards",
+        "coding",
+        "standard",
+        "standards",
+        "cs",
+        "code",
+        "style",
+        "sniffer",
+        "rules",
+        "sniffs",
+        "checks"
+    ],
+    "require": {
+        "php": ">=8.2",
+        "doctrine/coding-standard": "^13.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
