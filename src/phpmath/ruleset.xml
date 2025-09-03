@@ -20,7 +20,7 @@
         </properties>
     </rule>
 
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
         <properties>
             <property name="shortNullable" value="yes"/>
         </properties>
