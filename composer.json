@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "doctrine/coding-standard": "^13.0"
+        "doctrine/coding-standard": "^14.0"
     },
     "config": {
         "sort-packages": true,
