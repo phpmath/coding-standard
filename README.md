@@ -9,7 +9,7 @@ The shared [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) 
 
 ## Documentation
 
-The full documentation is at https://phpmath.github.io/coding-standard/. Every release is described on the [releases page](https://github.com/phpmath/coding-standard/releases).
+The full documentation is at https://phpmath.github.io/coding-standard/. Every change is listed in the [changelog](CHANGELOG.md) and every release on the [releases page](https://github.com/phpmath/coding-standard/releases).
 
 ## Install
 
