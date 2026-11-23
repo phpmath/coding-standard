@@ -1,13 +1,37 @@
 <?xml version="1.0"?>
 <ruleset name="phpmath"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+         xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <description>The phpmath coding standard.</description>
 
     <rule ref="Doctrine">
         <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
         <exclude name="Generic.Formatting.SpaceAfterCast"/>
         <exclude name="Generic.Formatting.SpaceAfterNot"/>
+        <!-- Exceptions are named after what went wrong, with the Exception suffix (InvalidValueException). -->
+        <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming.SuperfluousSuffix"/>
+    </rule>
+
+    <!-- Explicitly enforced so the promises of phpmath hold even if the Doctrine base changes. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+            <property name="linesCountBeforeDeclare" value="1"/>
+            <property name="linesCountAfterDeclare" value="1"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+
+    <!-- Immutability conventions: final (or abstract) classes, readonly where possible. -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal"/>
+    <rule ref="SlevomatCodingStandard.Classes.ReadonlyClass">
+        <properties>
+            <property name="enable" value="true"/>
+        </properties>
     </rule>
 
     <rule ref="Squiz.Commenting.FunctionComment">

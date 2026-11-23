@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ruleset name="phpmath-fixtures">
+    <description>Runs the phpmath standard against the fixtures.</description>
+    <arg name="extensions" value="php"/>
+    <rule ref="phpmath"/>
+</ruleset>

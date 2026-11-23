@@ -4,6 +4,13 @@
     "description": "The coding standards for PHP_CodeSniffer we use at phpmath",
     "homepage": "https://github.com/phpmath",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Walter Tamboer",
+            "homepage": "https://waltertamboer.nl",
+            "role": "Developer"
+        }
+    ],
     "keywords": [
         "phpmath",
         "coding-standard",
@@ -20,7 +27,7 @@
         "checks"
     ],
     "require": {
-        "php": ">=8.2",
+        "php": "^8.4",
         "doctrine/coding-standard": "^14.0"
     },
     "config": {
@@ -28,5 +35,8 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "scripts": {
+        "test": "sh tests/check-ruleset.sh"
     }
 }
